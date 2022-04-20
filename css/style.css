@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
 }
 
 .flex {
@@ -12,6 +13,7 @@
 :root {
     --jumbotron-bg-color: #b4d0e7;
     --footer-bg-color: black;
+    --btn-bg-color: #0061ff;
 }
 
 .container, .container-small, .banner {
@@ -43,6 +45,8 @@
 
 /*navigation bar*/
 header {
+    padding: 0.5rem;
+    background-color: white;
     position: fixed;
     width: 100%;
     top: 0;
@@ -51,17 +55,31 @@ header {
 }
 
 .navbar-container {
-    background-color: wheat;
     justify-content: space-between;
-    padding: 1rem 0.5rem;
 }
 
 .main-menu, .secondary-menu {
-    width: 300px;
-    background-color: aquamarine;
+    align-items: center;
 }
 
+.nav-menu li {
+    list-style-type: none;
+    padding: 1rem 1rem;
+}
 
+a {
+    text-decoration: none;
+    color: rgb(36, 35, 35);
+    font-size: 14px;
+}
+
+.btn-default {
+    font-size: 14px;
+    background-color: var(--btn-bg-color);
+    color: white;
+    border: none;
+    padding: 0.5rem;
+}
 
 
 /*main section con jumbotron e suddivisioni principali*/
