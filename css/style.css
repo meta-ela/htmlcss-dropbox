@@ -28,7 +28,7 @@
 }
 
 .container-small {
-    max-width: 900px;
+    max-width: 860px;
     min-height: 500px;
 }
 
@@ -62,12 +62,14 @@ header {
     align-items: center;
 }
 
+
+
 .nav-menu li {
     list-style-type: none;
     padding: 1rem 1rem;
 }
 
-a {
+header a {
     text-decoration: none;
     color: rgb(36, 35, 35);
     font-size: 14px;
@@ -89,6 +91,10 @@ a {
     padding: 4rem 0rem;
 }
 
+.section-large-pd {
+    padding: 8rem 0rem 4rem 0rem
+}
+
 .jumbotron {
     background-color: var(--jumbotron-bg-color);
 }
@@ -99,6 +105,15 @@ a {
 
 .large-icon {
     width: 25px;
+    margin-top: 3rem;
+}
+
+.icons {
+    width: 16px;
+}
+
+.list-items {
+    list-style-type: none;
 }
 
 h1 {
@@ -118,6 +133,16 @@ p, .btn-space, .small-text {
     position: relative;
     top: 70px;
 }
+
+
+hr {
+    width: 50px;
+}
+
+
+
+
+
 
 /*footer section*/
 .footer {
