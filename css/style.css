@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .flex {
@@ -39,7 +40,16 @@
     border: 1px dashed black;
 }
 
+
 /*navigation bar*/
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    overflow: hidden;
+    z-index: 1;
+}
+
 .navbar-container {
     background-color: wheat;
     justify-content: space-between;
