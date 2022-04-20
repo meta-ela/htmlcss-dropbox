@@ -14,6 +14,8 @@
     --jumbotron-bg-color: #b4d0e7;
     --footer-bg-color: black;
     --btn-bg-color: #0061ff;
+    --s-bottom-padding: 1.5rem;
+    --xs-bottom-padding: 1rem;
 }
 
 .container, .container-small, .banner {
@@ -43,6 +45,8 @@
 }
 
 
+
+
 /*navigation bar*/
 header {
     padding: 0.5rem;
@@ -61,8 +65,6 @@ header {
 .main-menu, .secondary-menu {
     align-items: center;
 }
-
-
 
 .nav-menu li {
     list-style-type: none;
@@ -109,11 +111,13 @@ header a {
 }
 
 .icons {
-    width: 16px;
+    width: 14px;
 }
 
 .list-items {
     list-style-type: none;
+    line-height: 2rem;
+    padding-bottom: 2rem;
 }
 
 h1 {
@@ -121,8 +125,21 @@ h1 {
     padding-bottom: 1rem;
 }
 
+h2 {
+    font-size: 2rem;
+    padding-bottom: var(--s-bottom-padding);
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
 p, .btn-space, .small-text {
     margin-bottom: 2rem;
+}
+
+.btn-large-pd {
+    padding: 1rem 3rem;
 }
 
 .main-text {
@@ -134,14 +151,43 @@ p, .btn-space, .small-text {
     top: 70px;
 }
 
-
 hr {
     width: 50px;
 }
 
+.bottom-pd-s {
+    padding-bottom: var(--s-bottom-padding);
+}
 
+.bottom-pd-xs {
+    padding-bottom: var(--xs-bottom-padding);
+}
 
+.radio {
+    padding-right: 1.5rem;
+}
 
+.col-type, .col {
+    border: 1px solid #d7d7d9;
+}
+
+.col-type {
+    margin-bottom: 1.5rem;
+    padding: 0.5rem;
+    text-align: center;
+}
+
+.col-items {
+    padding: 0rem 1rem;
+}
+
+.item-price {
+    font-weight: bold;
+}
+
+.item-user {
+    color: #d7d7d9;
+}
 
 
 /*footer section*/
