@@ -10,9 +10,10 @@
 
 :root {
     --jumbotron-bg-color: #b4d0e7;
+    --footer-bg-color: black;
 }
 
-.container, .container-small {
+.container, .container-small, .banner {
     width: 100%;
     margin: 0 auto;
     padding: 1rem 0.5rem;
@@ -26,6 +27,11 @@
 .container-small {
     max-width: 900px;
     min-height: 600px;
+}
+
+.banner {
+    max-width: 900px;
+    min-height: 300px;
 }
 
 .cont-color {
@@ -56,4 +62,14 @@
 
 .jumbotron {
     background-color: var(--jumbotron-bg-color);
+}
+
+
+
+
+
+
+/*footer section*/
+.footer {
+    background-color: var(--footer-bg-color);
 }
