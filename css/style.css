@@ -4,3 +4,17 @@
     box-sizing: border-box;
 }
 
+.flex {
+    display: flex;
+}
+
+.navbar-container {
+    background-color: wheat;
+    justify-content: space-between;
+    padding: 1rem 0.5rem;
+}
+
+.main-menu, .secondary-menu {
+    width: 300px;
+    background-color: aquamarine;
+}
