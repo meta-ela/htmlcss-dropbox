@@ -8,6 +8,32 @@
     display: flex;
 }
 
+:root {
+    --jumbotron-bg-color: #b4d0e7;
+}
+
+.container, .container-small {
+    width: 100%;
+    margin: 0 auto;
+    padding: 1rem 0.5rem;
+}
+
+.container {
+    max-width: 1000px;
+    min-height: 600px;
+}
+
+.container-small {
+    max-width: 900px;
+    min-height: 600px;
+}
+
+.cont-color {
+    background-color: rgb(214, 214, 127);
+    border: 1px dashed black;
+}
+
+/*navigation bar*/
 .navbar-container {
     background-color: wheat;
     justify-content: space-between;
@@ -17,4 +43,17 @@
 .main-menu, .secondary-menu {
     width: 300px;
     background-color: aquamarine;
+}
+
+
+
+
+/*main section con jumbotron e suddivisioni principali*/
+
+.section {
+    padding: 4rem 0rem;
+}
+
+.jumbotron {
+    background-color: var(--jumbotron-bg-color);
 }
