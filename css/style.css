@@ -29,12 +29,10 @@
 
 .container {
     max-width: 1000px;
-    min-height: 600px;
 }
 
 .container-small {
     max-width: 960px;
-    min-height: 500px;
 }
 
 .banner {
@@ -84,8 +82,11 @@ header {
 }
 
 header a {
-    text-decoration: none;
     color: rgb(36, 35, 35);
+}
+
+header a, footer a {
+    text-decoration: none;
     font-size: 14px;
 }
 /**/
@@ -162,6 +163,10 @@ hr {
     background-color: var(--border-color);
 }
 
+.hr-large {
+    width: 120px;
+}
+
 .request-box {
     padding: 2rem 0rem;
     justify-content: space-between;
@@ -202,15 +207,20 @@ hr {
     width: 118%;
 }
 
+.icons {
+    width: 14px;
+    height: 14px;
+    margin-right: 0.3rem;
+}
+
 .large-icon {
     width: 25px;
     margin-top: 3rem;
 }
 
-.icons {
-    width: 14px;
-    height: 14px;
-    margin-right: 0.3rem;
+.small-icons {
+    width: 10px;
+    justify-content: center;
 }
 
 .request-icon {
@@ -245,8 +255,13 @@ hr {
     gap: 1rem;
 }
 
+
 .col-basis {
     flex-basis: calc((100% /3) - 1rem);
+}
+
+.col, .flex-grow {
+    flex-grow: 1;
 }
 
 .card-col {
@@ -295,4 +310,16 @@ hr {
 /*footer section*/
 .footer {
     background-color: var(--footer-bg-color);
+}
+
+.footer-list, footer a {
+    color: white;
+    padding: 4rem 0rem;
+}
+
+.footer-language {
+    color: white;
+    gap: 0.5rem;
+    padding-bottom: var(--s-bottom-padding);
+    align-items: center;
 }
