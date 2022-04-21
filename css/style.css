@@ -132,6 +132,8 @@ h4 {
 
 .icons {
     width: 14px;
+    height: 14px;
+    margin-right: 0.3rem;
 }
 
 .list-items {
@@ -148,7 +150,8 @@ p, .btn-space, .small-text {
 }
 
 .btn-large-pd {
-    padding: 1rem 2.5rem;
+    padding: 0.7rem 0rem;
+    width: 100%;
 }
 
 .main-text {
@@ -182,15 +185,27 @@ hr {
     border: 1px solid var(--border-color);
 }
 
+.row .col {
+    flex-grow: 1;
+    flex-basis: calc(100% /3);
+    flex-wrap: wrap;
+}
+
+.card-col {
+    padding: 1rem;
+    border: 1px dashed red;
+    min-width: 350px;
+    min-height: 350px;
+}
+
 .col-type {
-    margin-bottom: 1.5rem;
     padding: 0.5rem;
     text-align: center;
     border-bottom: 1px solid var(--border-color);
 }
 
 .col-items {
-    padding: 0rem 1.5rem;
+    padding: 1.5rem;
 }
 
 .col-gap {
@@ -203,6 +218,11 @@ hr {
 
 .item-user {
     color: var(--border-color);
+}
+
+
+.card-col-img {
+    width: 100%;
 }
 
 
