@@ -22,7 +22,7 @@
 
 
 /*vari container*/
-.container, .container-small, .banner {
+.container, .container-small, .banner-container {
     width: 100%;
     margin: 0 auto;
 }
@@ -38,8 +38,13 @@
 }
 
 .banner {
+    padding: 5rem 0rem;
+}
+
+.banner-container {
     max-width: 960px;
-    min-height: 250px;
+    justify-content: space-between;
+    align-items: baseline;
 }
 
 .cont-color {
@@ -95,7 +100,6 @@ h1 {
 
 h2 {
     font-size: 2rem;
-    padding-bottom: var(--s-bottom-padding);
 }
 
 h3 {
@@ -113,6 +117,10 @@ h4 {
 .item-user {
     color: var(--border-color);
 }
+
+.banner-large h2 {
+    color: #61082b;
+}
 /**/
 
 
@@ -127,7 +135,7 @@ h4 {
     padding: 8rem 0rem 4rem 0rem
 }
 
-.jumbotron {
+.bg-color-jumbo-banner {
     background-color: var(--jumbotron-bg-color);
 }
 
@@ -176,6 +184,9 @@ hr {
     width: 250px;
 }
 
+.btn-white {
+    border: none;
+}
 
 .jumbotron-img {
     width: 118%;
@@ -261,7 +272,9 @@ hr {
     width: 100%;
 }
 
-
+.banner-large {
+    flex-basis: 40%;
+}
 
 
 
