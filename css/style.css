@@ -14,23 +14,23 @@
     --jumbotron-bg-color: #b4d0e7;
     --footer-bg-color: black;
     --btn-bg-color: #0061ff;
-    --s-bottom-padding: 1.5rem;
+    --border-color: grey;
+    --s-bottom-padding: 2.5rem;
     --xs-bottom-padding: 1rem;
 }
 
 .container, .container-small, .banner {
     width: 100%;
     margin: 0 auto;
-    padding: 1rem 0.5rem;
 }
 
 .container {
-    max-width: 960px;
+    max-width: 1000px;
     min-height: 600px;
 }
 
 .container-small {
-    max-width: 860px;
+    max-width: 960px;
     min-height: 500px;
 }
 
@@ -86,6 +86,26 @@ header a {
 }
 
 
+/*title and text*/
+h1 {
+    font-size: 4rem;
+    padding-bottom: 1rem;
+}
+
+h2 {
+    font-size: 2rem;
+    padding-bottom: var(--s-bottom-padding);
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+h4 {
+    padding-bottom: var(--s-bottom-padding);
+}
+
+
 
 /*main section con jumbotron e suddivisioni principali*/
 
@@ -116,22 +136,11 @@ header a {
 
 .list-items {
     list-style-type: none;
-    line-height: 2rem;
     padding-bottom: 2rem;
 }
 
-h1 {
-    font-size: 4rem;
-    padding-bottom: 1rem;
-}
-
-h2 {
-    font-size: 2rem;
-    padding-bottom: var(--s-bottom-padding);
-}
-
-h3 {
-    font-size: 1.5rem;
+.list-items li {
+    margin-bottom: var(--xs-bottom-padding);
 }
 
 p, .btn-space, .small-text {
@@ -139,7 +148,7 @@ p, .btn-space, .small-text {
 }
 
 .btn-large-pd {
-    padding: 1rem 3rem;
+    padding: 1rem 2.5rem;
 }
 
 .main-text {
@@ -152,7 +161,9 @@ p, .btn-space, .small-text {
 }
 
 hr {
-    width: 50px;
+    width: 60px;
+    margin-bottom: var(--s-bottom-padding);
+    background-color: var(--border-color);
 }
 
 .bottom-pd-s {
@@ -167,18 +178,23 @@ hr {
     padding-right: 1.5rem;
 }
 
-.col-type, .col {
-    border: 1px solid #d7d7d9;
+.card {
+    border: 1px solid var(--border-color);
 }
 
 .col-type {
     margin-bottom: 1.5rem;
     padding: 0.5rem;
     text-align: center;
+    border-bottom: 1px solid var(--border-color);
 }
 
 .col-items {
-    padding: 0rem 1rem;
+    padding: 0rem 1.5rem;
+}
+
+.col-gap {
+    gap: 2rem;
 }
 
 .item-price {
@@ -186,7 +202,7 @@ hr {
 }
 
 .item-user {
-    color: #d7d7d9;
+    color: var(--border-color);
 }
 
 
