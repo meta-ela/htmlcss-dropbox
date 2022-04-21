@@ -15,10 +15,13 @@
     --footer-bg-color: black;
     --btn-bg-color: #0061ff;
     --border-color: grey;
-    --s-bottom-padding: 2.5rem;
+    --s-bottom-padding: 2rem;
     --xs-bottom-padding: 1rem;
 }
 
+
+
+/*vari container*/
 .container, .container-small, .banner {
     width: 100%;
     margin: 0 auto;
@@ -35,8 +38,8 @@
 }
 
 .banner {
-    max-width: 900px;
-    min-height: 300px;
+    max-width: 960px;
+    min-height: 250px;
 }
 
 .cont-color {
@@ -44,7 +47,11 @@
     border: 1px dashed black;
 }
 
-
+.container-relative {
+    position: relative;
+    top: 70px;
+}
+/**/
 
 
 /*navigation bar*/
@@ -76,14 +83,8 @@ header a {
     color: rgb(36, 35, 35);
     font-size: 14px;
 }
+/**/
 
-.btn-default {
-    font-size: 14px;
-    background-color: var(--btn-bg-color);
-    color: white;
-    border: none;
-    padding: 0.5rem;
-}
 
 
 /*title and text*/
@@ -105,9 +106,18 @@ h4 {
     padding-bottom: var(--s-bottom-padding);
 }
 
+.item-price {
+    font-weight: bold;
+}
+
+.item-user {
+    color: var(--border-color);
+}
+/**/
 
 
-/*main section con jumbotron e suddivisioni principali*/
+
+/*main section e suddivisioni principali*/
 
 .section {
     padding: 4rem 0rem;
@@ -120,6 +130,52 @@ h4 {
 .jumbotron {
     background-color: var(--jumbotron-bg-color);
 }
+
+.list-items {
+    list-style-type: none;
+    padding-bottom: 2rem;
+}
+
+.list-items li {
+    margin-bottom: var(--xs-bottom-padding);
+}
+
+.btn-space, .small-text {
+    margin-bottom: 2rem;
+}
+
+.main-text {
+    width: 360px;
+}
+
+hr {
+    width: 60px;
+    margin-bottom: var(--s-bottom-padding);
+    background-color: var(--border-color);
+}
+/**/
+
+
+
+/*gestione immagini, icone e bottoni*/
+.btn-default {
+    font-size: 14px;
+    padding: 0.7rem;
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+}
+
+.btn-blue {
+    background-color: var(--btn-bg-color);
+    color: white;
+    border: none;
+}
+
+.btn-large {
+    width: 250px;
+}
+
 
 .jumbotron-img {
     width: 118%;
@@ -135,40 +191,11 @@ h4 {
     height: 14px;
     margin-right: 0.3rem;
 }
+/**/
 
-.list-items {
-    list-style-type: none;
-    padding-bottom: 2rem;
-}
 
-.list-items li {
-    margin-bottom: var(--xs-bottom-padding);
-}
 
-p, .btn-space, .small-text {
-    margin-bottom: 2rem;
-}
-
-.btn-large-pd {
-    padding: 0.7rem 0rem;
-    width: 200px;
-}
-
-.main-text {
-    width: 360px;
-}
-
-.container-relative {
-    position: relative;
-    top: 70px;
-}
-
-hr {
-    width: 60px;
-    margin-bottom: var(--s-bottom-padding);
-    background-color: var(--border-color);
-}
-
+/*spaziature*/
 .bottom-pd-s {
     padding-bottom: var(--s-bottom-padding);
 }
@@ -181,21 +208,24 @@ hr {
     padding-right: 1.5rem;
 }
 
+
+
+/*colonne*/
 .card {
     border: 1px solid var(--border-color);
 }
 
-.row .col {
-    flex-grow: 1;
-    flex-basis: calc(100% /3);
+.row-wrap {
     flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.col-basis {
+    flex-basis: calc((100% /3) - 1rem);
 }
 
 .card-col {
     padding: 1rem;
-    border: 1px dashed red;
-    min-width: 350px;
-    min-height: 350px;
 }
 
 .col-type {
@@ -214,26 +244,25 @@ hr {
 }
 
 .col-large {
-    flex-basis: 70%;
+    flex-basis: 60%;
 }
 
 .col-small {
-    flex-basis: 30%;
+    flex-basis: 40%;
     justify-content: right;
 }
 
-.item-price {
-    font-weight: bold;
+.col-small-pd {
+    padding-top: 3rem;
+    padding-left: 3rem;
 }
-
-.item-user {
-    color: var(--border-color);
-}
-
 
 .card-col-img {
     width: 100%;
 }
+
+
+
 
 
 /*footer section*/
