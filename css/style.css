@@ -151,7 +151,7 @@ p, .btn-space, .small-text {
 
 .btn-large-pd {
     padding: 0.7rem 0rem;
-    width: 100%;
+    width: 200px;
 }
 
 .main-text {
@@ -210,6 +210,16 @@ hr {
 
 .col-gap {
     gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.col-large {
+    flex-basis: 70%;
+}
+
+.col-small {
+    flex-basis: 30%;
+    justify-content: right;
 }
 
 .item-price {
