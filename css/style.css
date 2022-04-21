@@ -161,6 +161,16 @@ hr {
     margin-bottom: var(--s-bottom-padding);
     background-color: var(--border-color);
 }
+
+.request-box {
+    padding: 2rem 0rem;
+    justify-content: space-between;
+    font-weight: bold;
+}
+
+.request-title, .request-box {
+    border-bottom: 1px solid grey;
+}
 /**/
 
 
@@ -201,6 +211,10 @@ hr {
     width: 14px;
     height: 14px;
     margin-right: 0.3rem;
+}
+
+.request-icon {
+    margin-right: 2rem;
 }
 /**/
 
