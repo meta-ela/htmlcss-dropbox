@@ -155,13 +155,13 @@ h4 {
 }
 
 hr {
-    width: 60px;
+    width: 20%;
     margin-bottom: var(--s-bottom-padding);
     background-color: var(--border-color);
 }
 
 .hr-large {
-    width: 120px;
+    width: 10%;
 }
 
 .request-box {
