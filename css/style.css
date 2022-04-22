@@ -46,10 +46,6 @@
     align-items: baseline;
 }
 
-.cont-color {
-    background-color: rgb(214, 214, 127);
-    border: 1px dashed black;
-}
 
 .container-relative {
     position: relative;
@@ -177,6 +173,63 @@ hr {
 .request-title, .request-box {
     border-bottom: 1px solid grey;
 }
+
+.main-square {
+    padding: 2rem;
+    overflow: auto;
+    aspect-ratio: 1/1;
+}
+
+.square-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.square-container .square {
+    width: 50%;
+    aspect-ratio: 1/1;
+}
+
+.square-color-green {
+    background-color: #a2d39b;
+}
+
+.square-color-wine {
+    background-color: #61082b;
+}
+
+.square-color-blue {
+    background-color: #0093ce;
+}
+
+.square-color-red {
+    background-color: #ff1c1c;
+}
+
+.square-color-darkred {
+    background-color: #d5001f;
+}
+
+.square-color-lightblue {
+    background-color: var(--jumbotron-bg-color)
+}
+
+.square-color-darkblue {
+    background-color: #0d2481;
+}
+
+.square-color-yellow {
+    background-color: #ffd830;
+}
+
+.square-color-grey {
+    background-color: #f5f5f5;
+}
+
+.square-item-center{
+    justify-content: center;
+    align-items: center;
+}
 /**/
 
 
@@ -206,6 +259,14 @@ hr {
 
 .widht-100-img{
     width: 100%;
+}
+
+.widht-50-img {
+    width: 50%;
+}
+
+.invert-color-img {
+    filter: invert(1);
 }
 
 .icons {
@@ -256,9 +317,12 @@ hr {
     gap: 1rem;
 }
 
-
 .col-basis {
     flex-basis: calc((100% /3) - 1rem);
+}
+
+.flex-basis {
+    flex-basis: 0;
 }
 
 .col {
