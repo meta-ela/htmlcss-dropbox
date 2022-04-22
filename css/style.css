@@ -17,6 +17,7 @@
     --border-color: grey;
     --s-bottom-padding: 2rem;
     --xs-bottom-padding: 1rem;
+    --margin-bottom-2: 2rem;
 }
 
 
@@ -149,8 +150,8 @@ h4 {
     margin-bottom: var(--xs-bottom-padding);
 }
 
-.btn-space, .small-text {
-    margin-bottom: 2rem;
+.margin-bottom-2 {
+    margin-bottom: var(--margin-bottom-2);
 }
 
 .main-text {
@@ -203,8 +204,8 @@ hr {
     border: none;
 }
 
-.jumbotron-img {
-    width: 118%;
+.widht-100-img{
+    width: 100%;
 }
 
 .icons {
@@ -215,7 +216,7 @@ hr {
 
 .large-icon {
     width: 25px;
-    margin-top: 3rem;
+    margin-top: 6rem;
 }
 
 .small-icons {
@@ -260,9 +261,14 @@ hr {
     flex-basis: calc((100% /3) - 1rem);
 }
 
-.col, .flex-grow {
+.col {
     flex-grow: 1;
 }
+
+.flex-grow {
+    flex-grow: 0;
+}
+
 
 .card-col {
     padding: 1rem;
@@ -297,10 +303,6 @@ hr {
     padding-left: 3rem;
 }
 
-.card-col-img {
-    width: 100%;
-}
-
 .banner-large {
     flex-basis: 40%;
 }
@@ -308,8 +310,12 @@ hr {
 
 
 /*footer section*/
-.footer {
+footer {
     background-color: var(--footer-bg-color);
+}
+
+.row-between {
+    justify-content: space-between;
 }
 
 .footer-list, footer a {
